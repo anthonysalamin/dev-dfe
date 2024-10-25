@@ -196,4 +196,8 @@ collections:
             label: Text
             name: 32fcb8d3
             widget: string
+          - hint: 'Original text: Error, recaptcha failed, key: 3b902af2'
+            label: Text
+            name: 3b902af2
+            widget: string
 publish_mode: editorial_workflow
