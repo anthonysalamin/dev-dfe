@@ -176,8 +176,20 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: hello, key: 5e918d2'
+          - hint: 'Original text: Email Address, key: -2b7010d0'
             label: Text
-            name: 5e918d2
+            name: '-2b7010d0'
+            widget: string
+          - hint: >-
+              Original text: Thank you! Your submission has been received!, key:
+              5a0ea5a1
+            label: Text
+            name: 5a0ea5a1
+            widget: string
+          - hint: >-
+              Original text: Oops! Something went wrong while submitting the
+              form., key: -7c112e99
+            label: Text
+            name: '-7c112e99'
             widget: string
 publish_mode: editorial_workflow
