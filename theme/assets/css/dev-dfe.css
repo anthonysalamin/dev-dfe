@@ -621,6 +621,12 @@ p, li {
   height: 0%;
 }
 
+.div-block {
+  flex-flow: column;
+  align-items: center;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     flex-direction: column;

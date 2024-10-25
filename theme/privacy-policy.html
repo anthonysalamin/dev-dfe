@@ -64,8 +64,10 @@
         <div id="w-node-d2b3024f-8b9f-79b7-dbb1-5f1b806115f4-8c192326" class="gotcha w-embed"><input type="text" name="_gotcha" style="display:none;"></div><input type="submit" data-wait="Sending..." class="btn-send w-button" value="Send">
       </form>
       <div id="success-message-question" class="form-success-message w-form-done">
-        <div>{{ texts.33e8f484 }}</div>
-        <a href="{{ links.2f }}" class="link">{{ texts.6b3550ff }}</a>
+        <div class="div-block">
+          <div>{{ texts.33e8f484 }}</div>
+          <a href="{{ links.2f }}" class="link">{{ texts.6b3550ff }}</a>
+        </div>
       </div>
       <div id="error-message-question" class="form-fail-message w-form-fail">
         <div>{{ texts.2fff9fee }}</div>
@@ -175,4 +177,4 @@ document.addEventListener("DOMContentLoaded",()=>{injectCurrentYear()});function
 document.addEventListener("DOMContentLoaded",()=>{let e={smooth:!0,duration:1.75,easing:e=>Math.min(1,1.001-Math.pow(2,-10*e)),direction:"vertical",gestureDirection:"vertical",smoothTouch:!1,infinite:!1};function t(e){i.raf(e),requestAnimationFrame(t)}let i=new Lenis({...e});requestAnimationFrame(t)});
 </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script></body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}</body></html>
