@@ -10,6 +10,6 @@ functions = "functions"
   force = true
 
 [[redirects]]
-  from = "/*"
-  to = "/success.html"
+  from = "/api/proxy"
+  to = "/.netlify/functions/proxy"
   status = 200
