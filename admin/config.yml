@@ -192,4 +192,8 @@ collections:
             label: Text
             name: '-7c112e99'
             widget: string
+          - hint: 'Original text: form sent successfully, key: 32fcb8d3'
+            label: Text
+            name: 32fcb8d3
+            widget: string
 publish_mode: editorial_workflow
