@@ -28,7 +28,8 @@ collections:
         widget: hidden
         name: layout
         default: '{{slug}}.html'
-      - label: Seo
+      - &ref_0
+        label: Seo
         name: seo
         widget: object
         collapsed: true
@@ -86,6 +87,195 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: legal_text
+    label: Legal texts
+    folder: cms/legal-text
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: Text
+        name: body
+        widget: markdown
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: legal-text
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[legal-text].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: other_texts
+    label: Other texts
+    folder: cms/other-texts
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_main-introdution-text
+        label: Text
+        widget: text
+        required: false
+      - hint: ''
+        name: f_identifier-do-not-modify
+        label: Identifier (do not modify)
+        widget: number
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: other-texts
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[other-texts].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: headlines
+    label: Headlines
+    folder: cms/headlines
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_order
+        label: order
+        widget: number
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: headlines
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[headlines].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
+  - name: highlights
+    label: Highlights
+    folder: cms/highlights
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Highlight name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: f_description
+        label: Description
+        widget: text
+        required: false
+      - hint: ''
+        name: f_order
+        label: Order
+        widget: string
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: highlights
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[highlights].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
   - label: Theme Settings
     name: settings
     identifier_field: title
@@ -200,4 +390,290 @@ collections:
             label: Text
             name: 3b902af2
             widget: string
+          - hint: >-
+              Original text: I hereby affirm that I have thoroughly perused,
+              comprehended, and willingly acknowledge the Privacy Policy of
+              DFE., key: -4c26e57f
+            label: Text
+            name: '-4c26e57f'
+            widget: text
+          - hint: >-
+              Original text: Thank you, your message has been sent!, key:
+              33e8f484
+            label: Text
+            name: 33e8f484
+            widget: string
+          - hint: 'Original text: Go back, key: 6b3550ff'
+            label: Text
+            name: 6b3550ff
+            widget: string
+          - hint: 'Original text: Something went wrong, try again., key: 2fff9fee'
+            label: Text
+            name: 2fff9fee
+            widget: string
+          - hint: 'Original text: Get an edge, key: -5f8cfd1a'
+            label: Text
+            name: '-5f8cfd1a'
+            widget: string
+          - hint: 'Original text: We, key: aee'
+            label: Text
+            name: aee
+            widget: string
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
+            widget: string
+          - hint: >-
+              Original text: Mastering the art of understanding and solving
+              complex problems., key: -2d605cbc
+            label: Text
+            name: '-2d605cbc'
+            widget: string
+          - hint: 'Original text: Contact us, key: 7f274abe'
+            label: Text
+            name: 7f274abe
+            widget: string
+          - hint: 'Original text: © 2014-, key: 256f5935'
+            label: Text
+            name: 256f5935
+            widget: string
+          - hint: 'Original text: xxxx, key: 385e00'
+            label: Text
+            name: '385e00'
+            widget: string
+          - hint: 'Original text:  DF Enterprises LLC, Dubai, key: 1b12fdae'
+            label: Text
+            name: 1b12fdae
+            widget: string
+          - hint: 'Original text: Privacy Policy, key: -3fbde6f6'
+            label: Text
+            name: '-3fbde6f6'
+            widget: string
+          - hint: 'Original text: Data, key: 2063ca'
+            label: Text
+            name: 2063ca
+            widget: string
+          - hint: >-
+              Original text: Analyzing complex financial data requires a
+              systematic approach. We identify key variables and organise data
+              into meaningful categories which are evaluated using statistical
+              techniques and software tools to uncover patterns, trends, and
+              relationships. This is utilised for interpreting results to make
+              informed decisions, mitigate risks, and optimise financial
+              performance, ensuring sound business strategies., key: -723a601b
+            label: Text
+            name: '-723a601b'
+            widget: text
+          - hint: 'Original text: Managerial, key: b8aa7a7'
+            label: Text
+            name: b8aa7a7
+            widget: string
+          - hint: >-
+              Original text: It is crucial to establish clear and measurable
+              goals that align with an organization's vision. Cultivating a
+              culture of accountability and empowerment among teams fosters a
+              motivated workforce. Adapting to market changes, encouraging
+              innovation, and promoting effective communication channels are key
+              to successful managerial imperatives., key: -636c0dc
+            label: Text
+            name: '-636c0dc'
+            widget: text
+          - hint: 'Original text: Advanced Technology, key: 67430fca'
+            label: Text
+            name: 67430fca
+            widget: string
+          - hint: >-
+              Original text: Advanced blockchain technology can revolutionise
+              business decision-making by enhancing transparency, security, and
+              efficiency. It provides immutable and decentralised records,
+              enabling reliable data verification. Smart contracts automate
+              processes and ensure trust among parties. Real-time data analytics
+              and traceability enhance insights, enabling informed and
+              data-driven decisions, ultimately improving operational and
+              strategic outcomes., key: 5d9054c5
+            label: Text
+            name: 5d9054c5
+            widget: text
+          - hint: 'Original text: Ooops, no items found., key: 3901bee5'
+            label: Text
+            name: 3901bee5
+            widget: string
+          - hint: >-
+              Original text: Financial Engineers is a digital transformation
+              alliance focused on nurturing creative environments. As a global
+              community of technology enthusiasts, we analyse frontier financial
+              markets and study potential future applications of blockchain
+              technology., key: -4cfc895
+            label: Text
+            name: '-4cfc895'
+            widget: text
+          - hint: >-
+              Original text: Our network is comprised of early adopters, finance
+              professionals, family offices and experienced software engineers.
+              Combined, FE possess valuable experience in the digital economy,
+              providing our members with reliable insight into emerging
+              technologies., key: 7fc57810
+            label: Text
+            name: 7fc57810
+            widget: text
+          - hint: 'Original text: 01, key: 601'
+            label: Text
+            name: '601'
+            widget: string
+          - hint: 'Original text: 02, key: 602'
+            label: Text
+            name: '602'
+            widget: string
+          - hint: 'Original text: 03, key: 603'
+            label: Text
+            name: '603'
+            widget: string
+          - hint: 'Original text: Thank you !, key: 4343178a'
+            label: Text
+            name: 4343178a
+            widget: string
+          - hint: 'Original text: What’s a Rich Text element?, key: -3c0dda4d'
+            label: Text
+            name: '-3c0dda4d'
+            widget: string
+          - hint: >-
+              Original text: The rich text element allows you to create and
+              format headings, paragraphs, blockquotes, images, and video all in
+              one place instead of having to add and format them individually.
+              Just double-click and easily create content., key: 2e633c6a
+            label: Text
+            name: 2e633c6a
+            widget: text
+          - hint: 'Original text: Static and dynamic content editing, key: 57fa6135'
+            label: Text
+            name: 57fa6135
+            widget: string
+          - hint: >-
+              Original text: A rich text element can be used with static or
+              dynamic content. For static content, just drop it into any page
+              and begin editing. For dynamic content, add a rich text field to
+              any collection and then connect a rich text element to that field
+              in the settings panel. Voila!, key: -a016b40
+            label: Text
+            name: '-a016b40'
+            widget: text
+          - hint: >-
+              Original text: How to customize formatting for each rich text,
+              key: -4bffb26e
+            label: Text
+            name: '-4bffb26e'
+            widget: string
+          - hint: >-
+              Original text: Headings, paragraphs, blockquotes, figures, images,
+              and figure captions can all be styled after a class is added to
+              the rich text element using the "When inside of" nested selector
+              system., key: -43ba1153
+            label: Text
+            name: '-43ba1153'
+            widget: text
+          - hint: 'Original text: sdfsadf, key: 73e45905'
+            label: Text
+            name: '73e45905'
+            widget: string
+          - hint: 'Original text: asdfasdf, key: -2fd19198'
+            label: Text
+            name: '-2fd19198'
+            widget: string
+          - hint: 'Original text: asdfa, key: 58cb2ad'
+            label: Text
+            name: 58cb2ad
+            widget: string
+      - label: Links
+        name: links
+        file: cms/_data/links.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Links
+          - hint: 'Original link: /, key: 2f'
+            label: Link
+            name: 2f
+            widget: string
+          - hint: 'Original link: #, key: 23'
+            label: Link
+            name: '23'
+            widget: string
+          - hint: 'Original link: /privacy-policy/, key: -2f934417'
+            label: Link
+            name: '-2f934417'
+            widget: string
+      - label: Images
+        name: images
+        file: cms/_data/images.json
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: Images
+          - label: Image
+            name: 10ea7bb3
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 423ffbb4
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-e71017d'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-7301b384'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 2359efcb
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
 publish_mode: editorial_workflow

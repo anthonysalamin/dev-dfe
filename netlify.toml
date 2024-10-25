@@ -8,8 +8,3 @@ functions = "functions"
   to = "/.netlify/functions/:splat"
   status = 200
   force = true
-
-[[redirects]]
-  from = "/api/proxy"
-  to = "/.netlify/functions/proxy"
-  status = 200
